@@ -284,41 +284,41 @@ jQuery(document).ready(function ($) {
         /* Team Section Options
          * Source: http://idangero.us/swiper/ */
         /*-----------------------------------------------------------------------------------*/
-        team_section: function (self, galleryTop, galleryThumbs) {
+        // team_section: function (self, galleryTop, galleryThumbs) {
 
-            // this
-            self = this;
+        //     // this
+        //     self = this;
 
-            // Team swiper slider plugin initialize with options
-            galleryTop = self.selector_team.swiper({   // This is main selector. Which is used to initialize the plugin with options.
-                nextButton  : "#team-button-next",     // String with CSS selector or HTML element of the element that will work like "next" button after click on it
-                prevButton  : "#team-button-prev",     // String with CSS selector or HTML element of the element that will work like "prev" button after click on it
-                spaceBetween: 200,                     // Distance between slides in px.
-                initialSlide: 1,                       // Index number of initial slide.
-                speed       : 1000                     // Duration of transition between slides (in ms)
-            });
+        //     // Team swiper slider plugin initialize with options
+        //     galleryTop = self.selector_team.swiper({   // This is main selector. Which is used to initialize the plugin with options.
+        //         nextButton  : "#team-button-next",     // String with CSS selector or HTML element of the element that will work like "next" button after click on it
+        //         prevButton  : "#team-button-prev",     // String with CSS selector or HTML element of the element that will work like "prev" button after click on it
+        //         spaceBetween: 200,                     // Distance between slides in px.
+        //         initialSlide: 1,                       // Index number of initial slide.
+        //         speed       : 1000                     // Duration of transition between slides (in ms)
+        //     });
 
-            // Team thumbnails initialize with options
-            galleryThumbs = self.team_thumbs.swiper({  // This is main selector. Which is used to initialize the plugin with options.
-                spaceBetween  : 0,                 // Distance between slides in px.
-                centeredSlides: true,              // If true, then active slide will be centered, not always on the left side.
-                slidesPerView : "auto",            // Number of slides per view (slides visible at the same time on slider's container).
-                touchRatio    : 0.2,               // Touch ratio
-                direction     : "vertical",        // Could be 'horizontal' or 'vertical' (for vertical slider).
-                initialSlide  : 1,                 // Index number of initial slide.
-                speed         : 1000               // Duration of transition between slides (in ms)
-            });
+        //     // Team thumbnails initialize with options
+        //     galleryThumbs = self.team_thumbs.swiper({  // This is main selector. Which is used to initialize the plugin with options.
+        //         spaceBetween  : 0,                 // Distance between slides in px.
+        //         centeredSlides: true,              // If true, then active slide will be centered, not always on the left side.
+        //         slidesPerView : "auto",            // Number of slides per view (slides visible at the same time on slider's container).
+        //         touchRatio    : 0.2,               // Touch ratio
+        //         direction     : "vertical",        // Could be 'horizontal' or 'vertical' (for vertical slider).
+        //         initialSlide  : 1,                 // Index number of initial slide.
+        //         speed         : 1000               // Duration of transition between slides (in ms)
+        //     });
 
-            // Slides and thumbnail synchronize
-            galleryTop.params.control = galleryThumbs;
-            galleryThumbs.params.control = galleryTop;
+        //     // Slides and thumbnail synchronize
+        //     galleryTop.params.control = galleryThumbs;
+        //     galleryThumbs.params.control = galleryTop;
 
-            // Navigate to current slide when user click on thumbnail
-            self.team_thumbs.on("click", ".swiper-slide", function () {
-                // Go to slide
-                galleryTop.slideTo($(this).index());
-            });
-        },
+        //     // Navigate to current slide when user click on thumbnail
+        //     self.team_thumbs.on("click", ".swiper-slide", function () {
+        //         // Go to slide
+        //         galleryTop.slideTo($(this).index());
+        //     });
+        // },
 
 
         /*-----------------------------------------------------------------------------------*/
@@ -515,7 +515,7 @@ jQuery(document).ready(function ($) {
     TOptions.statistic_section();
     TOptions.tab_section();
     TOptions.portfolio_section();
-    TOptions.team_section();
+    // TOptions.team_section();
     TOptions.tweets_section();
     TOptions.google_map();
     TOptions.ajax_form_submit();

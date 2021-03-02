@@ -8257,6 +8257,17 @@ Scroll top top button
   height: auto;
 }
 
+.owl-carousel .item {
+background-color: #fff;
+border-radius: 30%;
+}
+
+.owl-carousel .item img {
+/* background-color: #fff; */
+border-radius: 30%;
+padding: 10px;
+}
+
 
 
 
