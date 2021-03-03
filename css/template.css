@@ -7612,7 +7612,7 @@ transition:all ease .5s;
   margin: 0 auto;
   right: 25px;
   top: 25px;
-  background:url(../images/quote.png) no-repeat top right;
+  /* background:url(../images/quote.png) no-repeat top right; */
 }
 
 
