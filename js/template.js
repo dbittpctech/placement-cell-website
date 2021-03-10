@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
         pre_loader          : $(".site-preloader"),                 // pre loader selector
         windows             : $(window),                            // document window
         selector_slider     : document.getElementById("sequence"),  // header slider javascript selector
-        selector_google_map : document.getElementById("site-map"),  // google map javascript selector
+        // selector_google_map : document.getElementById("site-map"),  // google map javascript selector
         selector_counter    : $(".counter"),                        // counter section for (statistic section)
         selector_tab        : $("#site-tabs-1"),                    // tabs selector for (tabs section)
         tabs_button         : $(".site-tabs-buttons"),              // tabs buttons for (tabs section)
@@ -399,35 +399,35 @@ jQuery(document).ready(function ($) {
         /* Google map for contact form
          * Source: https://developers.google.com/maps/documentation/javascript/ */
         /*-----------------------------------------------------------------------------------*/
-        google_map: function (map, marker) {
+        // google_map: function (map, marker) {
 
-            // Map options
-            map = new google.maps.Map(this.selector_google_map, {
-                center      : {lat: 44.540, lng: -78.546}, // Center map
-                zoom        : 8,                           // Map zoom level
-                mapTypeId   : "roadmap",                   // Map type
-                zoomControl : true,                        // Map zoom control
-                scaleControl: true,                        // Map scale control
-                scrollwheel : false,                       // Map mouse wheel zoom
-                styles      : [                            // Map custom style
-                    {
-                        stylers: [
-                            {saturation: -1000}
-                        ]
-                    }
-                ]
-            });
+        //     // Map options
+        //     map = new google.maps.Map(this.selector_google_map, {
+        //         center      : {lat: 44.540, lng: -78.546}, // Center map
+        //         zoom        : 8,                           // Map zoom level
+        //         mapTypeId   : "roadmap",                   // Map type
+        //         zoomControl : true,                        // Map zoom control
+        //         scaleControl: true,                        // Map scale control
+        //         scrollwheel : false,                       // Map mouse wheel zoom
+        //         styles      : [                            // Map custom style
+        //             {
+        //                 stylers: [
+        //                     {saturation: -1000}
+        //                 ]
+        //             }
+        //         ]
+        //     });
 
-            // Add map custom marker
-            marker = new google.maps.Marker({
-                position: {lat: 44.540, lng: -78.546},  // Center map
-                map     : map,                          // Map selector
-                icon    : "images/map-marker.png"       // Custom marker image
-            });
+        //     // Add map custom marker
+        //     marker = new google.maps.Marker({
+        //         position: {lat: 44.540, lng: -78.546},  // Center map
+        //         map     : map,                          // Map selector
+        //         icon    : "images/map-marker.png"       // Custom marker image
+        //     });
 
-            // To add the marker to the map, call setMap();
-            marker.setMap(map);
-        },
+        //     // To add the marker to the map, call setMap();
+        //     marker.setMap(map);
+        // },
 
 
         /*-----------------------------------------------------------------------------------*/
@@ -517,7 +517,7 @@ jQuery(document).ready(function ($) {
     TOptions.portfolio_section();
     // TOptions.team_section();
     TOptions.tweets_section();
-    TOptions.google_map();
+    // TOptions.google_map();
     TOptions.ajax_form_submit();
     TOptions.scroll_up();
 
