@@ -5,16 +5,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  background-color: #eeeeee;
-}
-
-html {
-  padding-top: 50px;
-  font-family: "Raleway", Helvetica, arial, sans-serif;
-  background-color: #eeeeee;
-} */
-
 .accordion {
   width: 100%;
   max-width: 75rem;
