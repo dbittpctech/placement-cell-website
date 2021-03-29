@@ -35,8 +35,8 @@ jQuery(document).ready(function ($) {
         selector_team       : $("#team-section-slider"),            // team slider selector for (team section)
         team_thumbs         : $("#team-thumbnails"),                // team thumbnails selector for (team section)
         selector_testimonial: $("#testimonial-slider"),             // testimonial selector for (testimonial section)
-        twitter_carousel    : $(".tweet-carousel"),                 // twitter selector for (tweet section)
-        twitter_slider      : $("#tweet-slider"),                   // twitter slider for (tweet section)
+        // twitter_carousel    : $(".tweet-carousel"),                 // twitter selector for (tweet section)
+        // twitter_slider      : $("#tweet-slider"),                   // twitter slider for (tweet section)
         contact_form        : $("#contactForm"),                    // contact form selector
 
         /*-----------------------------------------------------------------------------------*/
@@ -358,41 +358,9 @@ jQuery(document).ready(function ($) {
          * Go to folder (php > twitter > config.php) open this file
          * and add the twitter api key */
         /*-----------------------------------------------------------------------------------*/
-        tweets_section: function (self) {
+       
+        
 
-            // this
-            self = this;
-
-            /* PLUGIN INITIALIZE */
-            self.twitter_carousel.twittie({
-                dateFormat : "%b %d, %Y",               // Date format
-                template   : "" +                       // Template HTML structure
-                "<p>{{tweet}}</p>" +
-                "<div class='date'>{{date}}</div>",
-                count      : 3,                         // Number of tweets show
-                loadingText: "Loading!",                // Text show before tweets load
-                apiPath    : "php/twitter/tweet.php"    // Tweet PHP file path used for user information.
-            }, function () {
-
-                /* Plugin initialize (Unique ID selector) */
-                self.twitter_slider.swiper({
-
-                    // Changeable options
-                    loop                        : true,                  // Set to true to enable continuous loop mode.
-                    initialSlide                : 1,                     // Index number of initial slide.
-                    pagination                  : "#tweet-pagination",   // String with CSS selector or HTML element of the container with pagination
-                    nextButton                  : "#tweet-button-next",  // String with CSS selector or HTML element of the element that will work like "next" button after click on it
-                    prevButton                  : "#tweet-button-prev",  // String with CSS selector or HTML element of the element that will work like "prev" button after click on it
-                    paginationClickable         : true,                  // If true then clicking on pagination button will cause transition to appropriate slide. Only for bullets pagination type
-                    slidesPerView               : 1,                     // Number of slides per view (slides visible at the same time on slider's container).
-                    spaceBetween                : 20,                    // Distance between slides in px.
-                    speed                       : 1000,                  // Duration of transition between slides (in ms)
-                    autoplay                    : 3000,                  // Delay between transitions (in ms). If this parameter is not specified, auto play will be disabled
-                    autoplayDisableOnInteraction: false                  // Set to false and autoplay will not be disabled after user interactions (swipes), it will be restarted every time after interaction
-                });
-            });
-
-        },
 
 
         /*-----------------------------------------------------------------------------------*/
@@ -516,7 +484,7 @@ jQuery(document).ready(function ($) {
     TOptions.tab_section();
     TOptions.portfolio_section();
     // TOptions.team_section();
-    TOptions.tweets_section();
+    // TOptions.tweets_section();
     // TOptions.google_map();
     TOptions.ajax_form_submit();
     TOptions.scroll_up();

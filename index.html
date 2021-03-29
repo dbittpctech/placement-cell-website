@@ -16,7 +16,6 @@
 
     <!-- Title -->
     <title>T&P Cell - DBIT, Mumbai</title>
-
     <!-- Necessary CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,7 +30,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,35 +43,6 @@
 
     <!-- Wrapper -->
     <div class="site-wrapper">
-
-        <!-- Top Bar -->
-        <!-- <div class="site-top-bar">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="site-top-bar-left-section">
-                            <a>
-                                <i class="fa fa-clock-o"></i>
-                                <span>Mon to Sat : 08:00 - 15:30</span>
-                            </a>
-                        </div>
-                        <div class="site-top-bar-right-section">
-                            <a href="tel:+1801454587">
-                                <i class="fa fa-phone"></i>
-                                <span>+1 801 4545 87</span>
-                            </a>
-                            <a href="mailto:contact@gmail.com">
-                                <i class="fa fa-envelope"></i>
-                                <span>contact@gmail.com</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
-        <!-- End Top Bar -->
 
         <!-- Header -->
         <header class="site-header" id="sticky-header">
@@ -143,7 +113,7 @@
                                     <ul class="sub-menu">
                                         <!-- <li><a href="work-1.html">Placement Records</a></li>
                                         <li><a href="work-2.html">Internship Records</a></li> -->
-                                        <li><a href="work-3.html">Placement Records</a></li>
+                                        <li><a href="placement-records.html">Placement Records</a></li>
                                     </ul>
                                 </li>
 
@@ -450,6 +420,7 @@
 
                     </div>
                 </div>
+
             </div>
             <!-- End Bootstrap -->
 
@@ -607,7 +578,7 @@
                             </div>
 
                             <div class="item">
-                                <img src="images/companyLogos/hansaCEquity.jpg Intelligence.png">
+                                <img src="images/companyLogos/hansaCEquity.jpg">
                             </div>
 
                             <div class="item">
@@ -635,7 +606,7 @@
                             </div>
 
                             <div class="item">
-                                <img src="images/companyLogos/LTI.png.png">
+                                <img src="images/companyLogos/LTI.png">
                             </div>
 
                             <div class="item">
@@ -800,8 +771,42 @@
             <!-- End Bootstrap -->
         </div>
         <!-- End team -->
+        <!-- Portfolio -->
+        <div id="portfolio" class="site-grey-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Batch of 2020-21</h1>
+                        <h2>Latest Placements</h3>
+                    </div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;">
+                    <div class="col-sm-8 owl-carousel placement-records owl-theme galleryslider">
+                        <div class="item">
+                            <img src="images/posters-2020/aws.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/posters-2020/capgemini1.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/posters-2020/capgemini2.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/posters-2020/capgemini3.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/posters-2020/cimpress.png">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio -->
         <!-- Testimonial -->
-        <div id="testimonial" class="site-testimonial site-white-section" style="padding-top: 0;">
+        <div id="testimonial" class="site-testimonial site-white-section">
 
             <!-- Bootstrap -->
             <div class="container-fluid wide">
@@ -1337,6 +1342,30 @@
     <script src="js/retina.min.js"></script> <!-- Retina js -->
 
     <script>
+
+
+        $('.placement-records').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 1500,
+            slideBy: 3,
+            // nav: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                }
+
+            }
+        })
+
+    </script>
+    <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 20,
@@ -1358,6 +1387,7 @@
                 }
             }
         })
+
     </script>
 
     <script>

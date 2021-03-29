@@ -1,0 +1,7 @@
+.galleryslider .item img{
+    border-radius: 0;
+}
+.galleryslider .item {
+    border-radius: 0;
+    background-color: transparent;
+}
