@@ -7718,6 +7718,10 @@ Contact us page
 box-shadow: 0px 10px 82px 4px rgba(151,170,180,0.24);
 }
 
+.con span{
+  font-family:'Open Sans', sans-serif;
+}
+
 @media screen and (max-width: 767px) {
 	.contact-section .site-box {
 		padding:25px 15px;
