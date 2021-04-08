@@ -5,3 +5,7 @@
     border-radius: 0;
     background-color: transparent;
 }
+.home-gallery {
+    max-width:100%;
+    max-height:100%;
+}
