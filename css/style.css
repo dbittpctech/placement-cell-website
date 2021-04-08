@@ -5,7 +5,78 @@
     border-radius: 0;
     background-color: transparent;
 }
-.home-gallery {
+.home-gallery .item {
     max-width:100%;
     max-height:100%;
+    border-radius: 0;
+    background-color: transparent;
 }
+
+.home-gallery .item img{
+    height: 500px;
+    padding: 5%;
+    border-radius: 0;
+    width: auto;
+    margin: auto;
+}
+
+.news {
+    width: 160px
+}
+
+.news-scroll a {
+    text-decoration: none
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px !important;
+    background-color: rgb(207, 23, 23);
+    border-radius: 50%;
+    display: inline-block
+}
+
+
+.holder { 
+    background-color:#fff;
+    width:auto;
+    height:500px;
+    overflow:hidden;
+    padding:10px;
+    font-family:Helvetica;
+    margin: auto 10%;
+    border-radius: 30px;
+  }
+  .holder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width:auto;
+    height:auto;
+    margin: 5%;
+    overflow: hidden;
+    
+  }
+  .holder ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+  }
+  .holder ul li {
+    padding:10px 0px;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #4543d0;
+  }
+  .holder ul li a {
+    color:#4543d0;
+    text-decoration:none;
+  }
+  .holder ul li span {
+    margin-right: 10px;
+    color: black;
+  }

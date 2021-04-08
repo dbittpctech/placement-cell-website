@@ -150,6 +150,25 @@
 
         </div>
         <!-- End Slider -->
+        <div class="container mt-1">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-md-offset-2">
+                    <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                        <div
+                            class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">
+                            <span class="d-flex align-items-center">&nbsp;Latest News</span>
+                        </div>
+                        <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
+                            onmouseout="this.start();"> <a href="#">Excepteur sint occaecat cupidatat non proident, sunt
+                                in culpa qui officia deserunt mollit anim id est laborum. </a> <span class="dot"></span>
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut </a> <span class="dot"></span> <a href="#">Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse </a>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- About Us -->
         <div id="about" class="site-about site-white-section">
@@ -567,14 +586,89 @@
                         <h1>Latest Updates</h1>
                         <h2 style="font-size: 2.3rem;">Gallery</h2>
                         <br>
-                    <!-- Put your gallery slider here  -->
+                        <!-- Put your gallery slider here  -->
+                        <div class="owl-carousel owl-theme home-gallery">
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/bharat-1.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/dbit-1.webp">
+                            </div>
 
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-11.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-12.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-13.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-15.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-17.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-18.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-21.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-22.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-23.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-24.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-3.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-5.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-6.webp">
+                            </div>
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-7.webp">
+                            </div>
+
+                            <div class="item img-fluid">
+                                <img src="images/homeGallery/photo-8.webp">
+                            </div>
+
+
+
+
+
+
+                        </div>
                     </div>
 
                     <div class="col-xs-12 col-md-6">
                         <h1>Latest Updates</h1>
                         <h2 style="font-size: 2.3rem;">Announcements</h2>
 
+                        <div class="holder">
+                            <ul id="ticker01">
+                                <li>Registrations for placement of BE 2020-2021 has started do get in touch with TPC</li>
+                                <li>Internshala.com is providing work from home internship opportunities.</li>
+                                <li>All major mass recruiting companies are coming for BE 2020-2021 placements.</li>
+                                
+                            </ul>
+                        </div>
 
                     </div>
 
@@ -1138,7 +1232,7 @@
 
     <script src="js/retina.js"></script> <!-- Retina js -->
     <script src="js/retina.min.js"></script> <!-- Retina js -->
-   
+
 
     <script>
 
@@ -1189,7 +1283,64 @@
         })
 
     </script>
+    <script>
+        $('.home-gallery').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 1500,
+            slideBy: 1,
+            // nav: true,
 
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+            }
+        })
+
+    </script>
+    <script>
+        jQuery.fn.liScroll = function (settings) {
+            settings = jQuery.extend({
+                travelocity: 0.03
+            }, settings);
+            return this.each(function () {
+                var $strip = jQuery(this);
+                $strip.addClass("newsticker")
+                var stripHeight = 1;
+                $strip.find("li").each(function (i) {
+                    stripHeight += jQuery(this, i).outerHeight(true); // thanks to Michael Haszprunar and Fabien Volpi
+                });
+                var $mask = $strip.wrap("<div class='mask'></div>");
+                var $tickercontainer = $strip.parent().wrap("<div class='tickercontainer'></div>");
+                var containerHeight = $strip.parent().parent().height();	//a.k.a. 'mask' width 	
+                $strip.height(stripHeight);
+                var totalTravel = stripHeight;
+                var defTiming = totalTravel / settings.travelocity;
+                console.log(defTiming, "DefTiming");
+                function scrollnews(spazio, tempo) {
+                    $strip.animate({ top: '-=' + spazio }, tempo, "linear", function () { $strip.css("top", containerHeight); scrollnews(totalTravel, defTiming); });
+                }
+                scrollnews(totalTravel, defTiming);
+                $strip.hover(function () {
+                    jQuery(this).stop();
+                },
+                    function () {
+                        var offset = jQuery(this).offset();
+                        var residualSpace = offset.top + stripHeight;
+                        var residualTime = residualSpace / settings.travelocity;
+                        scrollnews(residualSpace, residualTime);
+                    });
+            });
+        };
+
+        $(function () {
+            $("ul#ticker01").liScroll();
+        });
+    </script>
 
     <script>
         $('.accordion-item .heading').on('click', function (e) {
@@ -1217,4 +1368,4 @@
 
 </body>
 
-</html> 
+</html>
