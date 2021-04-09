@@ -133,3 +133,13 @@
     font-size: 3vh !important;
   }
 }
+
+.internship-list {
+  text-align: left;
+}
+
+.internship-list li {
+  padding: 10px 5px;
+  font-size: 1.2rem;
+}
+
