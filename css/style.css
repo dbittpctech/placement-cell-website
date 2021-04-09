@@ -31,6 +31,10 @@
   .team-description h4, .team-description table {
     color: #fff;
   }
+  
+.site-main-slider {
+  height: 80vh;
+}
 }
 
 .news {
