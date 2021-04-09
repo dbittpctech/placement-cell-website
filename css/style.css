@@ -20,23 +20,6 @@
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .home-gallery .item img {
-    height: 100px;
-    padding: 5%;
-    border-radius: 0;
-    width: auto;
-    margin: auto;
-  }
-  .team-description h4, .team-description table {
-    color: #fff;
-  }
-  
-.site-main-slider {
-  height: 80vh;
-}
-}
-
 .news {
   width: 160px;
 }
@@ -102,6 +85,51 @@
   }
 
   .holder {
-    height: 150px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-gallery .item img {
+    height: 250px;
+    padding: 5%;
+    border-radius: 0;
+    width: auto;
+    margin: auto;
+  }
+  .team-description h4,
+  .team-description table {
+    color: #fff;
+  }
+  .site-main-slider {
+    height: 300px;
+  }
+
+  .sequence-slide {
+    height: 300px !important;
+  }
+
+  #gallery {
+    padding-bottom: 5%;
+  }
+
+  .site-main-slider h1 {
+    font-size: 3vh;
+    line-height: 1.5;
+  }
+
+  #placement {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .site-white-section h2, .site-dark-section h2, .site-grey-section h2 {
+    font-size: 2.8vh;
+  }
+
+  .accordion-item .heading {
+    font-size: 1.5vh !important;
+  }
+  .site-white-section h3, .site-dark-section h3, .site-grey-section h3, .inner-page-white-section h3, .inner-page-grey-section h3 {
+    font-size: 3vh !important;
   }
 }
