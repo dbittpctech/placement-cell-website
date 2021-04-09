@@ -20,15 +20,15 @@
   margin: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .home-gallery .item img {
-    height: 200px;
+    height: 100px;
     padding: 5%;
     border-radius: 0;
     width: auto;
     margin: auto;
   }
-  .team-description {
+  .team-description h4, .team-description table {
     color: #fff;
   }
 }
@@ -92,7 +92,7 @@
   color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .holder ul li {
     font-size: 1rem;
   }
