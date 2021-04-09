@@ -100,4 +100,8 @@
   .holder ul li {
     font-size: 1rem;
   }
+
+  .holder {
+    height: 150px;
+  }
 }
