@@ -405,15 +405,13 @@
                             <h3>Rules and Regulations</h3>
                             <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
                             <div class="btn-holder">
-                                <div id="btnd"><span class="noselect">Download</a></span>
+                                <div id="btnd"><span class="noselect">Download</span>
                                     <div id="circle"></div>
                                     <script>
                                         function download() {
                                             var element = document.createElement('a');
-                                            element.setAttribute('href',
-                                                'data:text/plain;charset=utf-8, '
-                                                + encodeURIComponent("StudentUndertaking2022.pdf"));
-                                            element.setAttribute('download', "StudentUndertaking2022.pdf");
+                                            element.setAttribute('href', '' + encodeURIComponent("TPCellUndertaking2022.pdf"));
+                                            element.setAttribute('download', "TPCellUndertaking2022.pdf");
                                             document.body.appendChild(element);
                                             element.click();
                                             document.body.removeChild(element);
@@ -461,10 +459,10 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Google map -->
     <script src="js/imagesloaded.pkgd.min.js"></script> <!-- Header slider scripts -->
     <script src="js/hammer.min.js"></script>
-    <script src="js/sequence.min.js"></script>
+    <!-- <script src="js/sequence.min.js"></script> -->
     <script src="js/venobox.min.js"></script> <!-- Light box -->
     <script src="js/jquery.mb.YTPlayer.min.js"></script> <!-- Video background -->
-    <script src="js/template.js"></script> <!-- Theme Options -->
+    <script src="js/template.js"></script> 
 
     <script src="js/retina.js"></script> <!-- Retina js -->
     <script src="js/retina.min.js"></script> <!-- Retina js -->

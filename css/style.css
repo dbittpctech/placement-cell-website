@@ -39,56 +39,6 @@
   display: inline-block;
 }
 
-.holder {
-  background-color: #fff;
-  width: auto;
-  height: 500px;
-  overflow: hidden;
-  padding: 10px;
-  font-family: Helvetica;
-  margin: auto 10%;
-  border-radius: 30px;
-}
-.holder .mask {
-  position: relative;
-  left: 0px;
-  top: 10px;
-  width: auto;
-  height: auto;
-  margin: 5%;
-  overflow: hidden;
-}
-.holder ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.holder ul li {
-  padding: 10px 0px;
-  text-align: left;
-  font-size: 1.4rem;
-  color: #4543d0;
-}
-.holder ul li a {
-  color: #4543d0;
-  text-decoration: none;
-}
-.holder ul li span {
-  margin-right: 10px;
-  color: black;
-}
-
-@media screen and (max-width: 600px) {
-  .holder ul li {
-    font-size: 1rem;
-  }
-
-  .holder {
-    height: 250px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .home-gallery .item img {
     height: 250px;
