@@ -7196,13 +7196,13 @@ Work page 3 - project list
 
 .cases-list .site-box {
   /* Service */
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
   display: block;
   width: 100%;
   text-align: left;
   margin: 0 0 30px;
   max-width: 370px;
-  min-height: 236px;
+  min-height: 100px;
   background-color: white;
   position: relative;
   overflow: hidden;
