@@ -479,7 +479,7 @@ jQuery(document).ready(function ($) {
     TOptions.header_section();
     TOptions.sticky_header_menu();
     TOptions.internal_scroll_links();
-    // TOptions.main_slider_section();
+    TOptions.main_slider_section();
     TOptions.statistic_section();
     TOptions.tab_section();
     TOptions.portfolio_section();
