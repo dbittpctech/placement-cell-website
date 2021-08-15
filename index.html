@@ -690,6 +690,7 @@
 
             </div>
         </div>
+
         <!-- <div id="gallery" class="site-grey-section" style="background-color: #fff;">
             <div class="container">
                 <div class="row" style="align-items: center;">
@@ -1251,8 +1252,23 @@
                 </div>
             </div>
         </footer>
-        <!-- End Footer -->
 
+        <!-- End Footer -->
+        <div class="modal fade" id="Independence" tabindex="-1" role="dialog" aria-labelledby="IndependenceLabel"
+            aria-hidden="true" style="margin: auto;margin-top: 10%;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color: transparent;border: none;">
+
+                    <div class="modal-body">
+                        
+                        <div class="row justify-content-center">
+                            <video src="JanaGanaManaDBIT.mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- Preloader -->
         <div class="site-preloader">
             <img src="images/loader.gif" alt="loader">
@@ -1282,6 +1298,13 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script> <!-- Video background -->
     <script src="js/template.js"></script> <!-- Theme Options -->
 
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#Independence').modal('show');
+        });
+
+        
+    </script>
     <script>
 
 
