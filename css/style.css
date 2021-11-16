@@ -175,3 +175,20 @@
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
+
+.site-box-2 {
+  padding: 0 0 0px 0;
+	display: block;
+	text-align: left;
+	margin: 0 0 30px;
+	min-height: 100px;
+	background-color: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	transition: 400ms ease;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 10px 82px 4px rgba(151, 170, 180, 0.24);
+	-moz-box-shadow: 0px 10px 82px 4px rgba(151, 170, 180, 0.24);
+	box-shadow: 0px 10px 82px 4px rgba(151, 170, 180, 0.24);
+}
