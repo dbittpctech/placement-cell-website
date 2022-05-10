@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://placement.dbit.in/sitemap.xml
+Sitemap: http://placement.dbit.in/sitemap.xml
